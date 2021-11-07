@@ -8,6 +8,9 @@ DESCRIPTIONS = (
     (4, "Snow")
 )
 
+
+
+
 class Description(models.Model):
     description = models.IntegerField(choices=DESCRIPTIONS, default=0)
     created_on = models.DateTimeField(auto_now_add = True)
