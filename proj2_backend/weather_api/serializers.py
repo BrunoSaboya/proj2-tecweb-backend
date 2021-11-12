@@ -1,10 +1,8 @@
 from rest_framework import serializers
-from .models import Description
+from .models import Favorits
 
 
-class DescriptionSerializer(serializers.ModelSerializer):
-    """Serializes the Description"""
-
+class FavoritSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Description
-        fields = ['id', 'description', 'temperature', 'created_on']
+        model = Favorits
+        fields = ['favorits']

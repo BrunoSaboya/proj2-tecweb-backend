@@ -1,12 +1,9 @@
-from django.urls import path, include
-from rest_framework import urlpatterns
+from django.urls import path
 from weather_api import views
-from rest_framework.routers import DefaultRouter
-
-router = DefaultRouter()
-router.register('descriptions', views.DescriptionViewSet)
+from . import views
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('api/notes/<str:favoritId>/', views.api_get_fav),
+    path('api/notes', views.api_post_fav)
 ]
