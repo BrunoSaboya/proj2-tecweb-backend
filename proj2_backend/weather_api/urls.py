@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('api/notes/<str:favoritId>/', views.api_get_fav),
-    path('api/notes', views.api_post_fav)
+    path('api/favorits/<str:favoritId>/', views.api_get_fav),
+    path('api/favorits/', views.api_post_fav)
 ]
