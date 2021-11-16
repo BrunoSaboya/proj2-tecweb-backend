@@ -1,6 +1,5 @@
 angles
 asgiref
-base-local-planner
 bondpy
 camera-calibration
 camera-calibration-parsers
