@@ -1,7 +1,6 @@
 Django
 django-filter
 djangorestframework
-distribute
 gunicorn
 Markdown
 requests
